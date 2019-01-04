@@ -1,104 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Nick</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-  <link rel="stylesheet" href="/assets/css/index.css">
-  <link rel="stylesheet" href="/assets/css/pushbar.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Nick</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css"
+    />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
+    ></script>
+    <link rel="stylesheet" href="/assets/css/index.css" />
+    <link rel="stylesheet" href="/assets/css/pushbar.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <!-- Header -->
+      <div class="header is-overlay">
+        <button data-pushbar-target="left">Left pushbar</button>
+      </div>
 
-</head>
-<body>
-  
-  <div class="wrap">
-    <!-- Header -->
-    <div class="header is-overlay">
-      <button data-pushbar-target="left">Left pushbar</button>
-    </div>
+      <!-- /Navbar -->
+      <nav>
+        <aside class="menu pushbar from_left" data-pushbar-id="left">
+          <span data-pushbar-close class="close push_right"></span>
+          <p class="menu-label"><a class="nav-item" href="#home">Home</a></p>
+          <p class="menu-label"><a class="nav-item" href="#about">About</a></p>
+          <p class="menu-label"><a class="nav-item" href="#work">Work</a></p>
+          <p class="menu-label">
+            <a class="nav-item" href="#skills">Skills</a>
+          </p>
+          <p class="menu-label">
+            <a class="nav-item" href="#contact">Contact</a>
+          </p>
+        </aside>
+      </nav>
 
-    <!-- /Navbar -->
-    <nav>
-      <aside class="menu pushbar from_left" data-pushbar-id="left">
-        <span data-pushbar-close class="close push_right"></span>
-        <p class="menu-label"><a class="nav-item" href="#home">Home</a></p>
-        <p class="menu-label"><a class="nav-item" href="#about">About</a></p>
-        <p class="menu-label"><a class="nav-item" href="#work">Work</a></p>
-        <p class="menu-label"><a class="nav-item" href="#skills">Skills</a></p>
-        <p class="menu-label"><a class="nav-item" href="#contact">Contact</a></p>
-      </aside>
-    </nav>
-
-    <!-- Content -->
-    <div class="content pushbar_main_content">
-      <section id="home" class="hero is-success is-fullheight home">
-        <div class="hero-body">
-          <div class="container is-fluid level">
-            <div class="level-left has-text-weight-semibold is-capitalized">
-              <h1>
-              Hi, <br>
-              I'm Nick,<br>
-              Web developer. <br>
-              <span class="is-size-7">Front-end developer&nbsp;/&nbsp;Back-end developer</span>
-              <br><br>
-              <a class="button is-primary is-inverted is-outlined">Contact me</a></h1>
+      <!-- Content -->
+      <div class="content pushbar_main_content">
+        <section id="home" class="hero is-success is-fullheight home">
+          <div class="hero-body">
+            <div class="container is-fluid level">
+              <div class="level-left has-text-weight-semibold is-capitalized">
+                <h1>
+                  Hi, <br />
+                  I'm Nick,<br />
+                  Web developer. <br />
+                  <span class="is-size-7"
+                    >Front-end developer&nbsp;/&nbsp;Back-end developer</span
+                  >
+                  <br /><br />
+                  <a class="button is-primary is-inverted is-outlined"
+                    >Contact me</a
+                  >
+                </h1>
+              </div>
+              <div class="level-right">SVG</div>
             </div>
-            <div class="level-right">SVG</div>
           </div>
-        </div>
-      </section>
-      <section id="about" class="hero is-success is-fullheight home">
-        <div class="hero-body">
-          <div class="container is-fluid">
-            <div id="image">
+        </section>
+        <section id="about" class="hero is-success is-fullheight home">
+          <div class="hero-body">
+            <div class="container is-fluid">
+              <div id="image">
                 <div id="aboutwrap">
                   <p class="title">Hello There</p>
                   <article>
-                    <p class="is-size-5">Computer science education cannot make anybody an expert programmer any more than studying brushes and pigment can make
-                    somebody an expert painter</p>
-                    <p class="is-size-6">Everything started with passion to web technologies.<br> A self taught developer, I started coding an year ago, it quickly grew into a passion and i've been thriving forward since.<br> I work with open source HTML, CSS, JS and MYSQL. I love challanges("celeste"), new projects & solving problems<br><span>Space > Tabs</span></p>
+                    <p class="is-size-5">
+                      Computer science education cannot make anybody an expert
+                      programmer any more than studying brushes and pigment can
+                      make somebody an expert painter
+                    </p>
+                    <p class="is-size-6">
+                      Everything started with passion to web technologies.<br />
+                      A self taught developer, I started coding an year ago, it
+                      quickly grew into a passion and i've been thriving forward
+                      since.<br />
+                      I work with open source HTML, CSS, JS and MYSQL. I love
+                      challanges("celeste"), new projects & solving problems<br /><span
+                        >Space > Tabs</span
+                      >
+                    </p>
                   </article>
                 </div>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-      <section id="work" class="hero is-success is-fullheight home">
-        <div class="hero-body">
-          <div class="container is-fluid">
-            <h1 class="title">
-              work
-            </h1>
+        </section>
+        <section id="work" class="hero is-success is-fullheight home">
+          <div class="hero-body">
+            <div class="container is-fluid">
+              <div id="projects">
+                <h1 class="has-text-centered">Projects</h1>
+                <div class="sample">
+                  <p>
+                    My Projects some are on production some are for the
+                    show-case / appreciate that zone mode
+                  </p>
+                </div>
+                <!-- 1 -->
+                <div class="project has-text-justified level">
+                  <div class="info level-left">
+                    <p class="title">Awwards</p>
+                    <p class="work has-text-weight-light">
+                      Front and backend development
+                    </p>
+                    <div class="description">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Fugit officia, sunt corrupti laboriosam unde
+                        excepturi veniam perspiciatis, ad nesciunt qui quas?
+                        Velit soluta vero et aut eaque sequi laboriosam hic!
+                      </p>
+                      <a class="button is-primary is-inverted is-outlined level-item"
+                        >Contact me</a
+                      >
+                    </div>
+                  </div>
+
+                  <div class="cover level-right is-hidden-mobile">
+                    <a href="/linkto">
+                      <img
+                        src="https://d33wubrfki0l68.cloudfront.net/abe09770dbe7afb0dbf2ecfc84fc466ad56ce3ca/ad085/img/projects/nysb.jpg"
+                        alt="cover image"
+                        width="300"
+                        height="190"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <!-- 2 -->
+              </div>
+            </div>
           </div>
-        </div>
-      </section>
-      <section id="skills" class="hero is-success is-fullheight home">
-        <div class="hero-body">
-          <div class="container is-fluid">
-            <h1 class="title">
-              skills
-            </h1>
-            
+        </section>
+        <section id="skills" class="hero is-success is-fullheight home">
+          <div class="hero-body">
+            <div class="container is-fluid"><h1 class="title">skills</h1></div>
           </div>
-        </div>
-      </section>
-      <section id="contact" class="hero is-primary is-fullheight home">
-        <div class="hero-body">
-          <div class="container is-medium is-fluid">
-            <h1 class="title">
-              contact
-            </h1>
+        </section>
+        <section id="contact" class="hero is-primary is-fullheight home">
+          <div class="hero-body">
+            <div class="container is-medium is-fluid">
+              <h1 class="title">contact</h1>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </div>
-  </div>
 
-
-  <script src="/assets/js/index.js"></script>
-  <script src="/assets/js/pushbar.js"></script>
-  <script src="https://unpkg.com/scrollnav@3.0.1/dist/scrollnav.min.umd.js"></script>
-</body>
+    <script src="/assets/js/index.js"></script>
+    <script src="/assets/js/pushbar.js"></script>
+    <script src="https://unpkg.com/scrollnav@3.0.1/dist/scrollnav.min.umd.js"></script>
+  </body>
 </html>
