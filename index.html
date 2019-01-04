@@ -9,6 +9,7 @@
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
   <link rel="stylesheet" href="/assets/css/index.css">
   <link rel="stylesheet" href="/assets/css/pushbar.css">
+  <script src="/assets/js/pushbar.js"></script>
 </head>
 <body>
   
@@ -22,25 +23,33 @@
     <nav>
       <aside class="menu pushbar from_left" data-pushbar-id="left">
         <span data-pushbar-close class="close push_right"></span>
-        <p class="menu-label"><a class="nav-item" href="/">Home</a></p>
-        <p class="menu-label"><a class="nav-item" href="/">Home</a></p>
-        <p class="menu-label"><a class="nav-item" href="/">Home</a></p>
-        <p class="menu-label"><a class="nav-item" href="/">Home</a></p>
+        <p class="menu-label"><a class="nav-item" href="#home">Home</a></p>
+        <p class="menu-label"><a class="nav-item" href="#about">About</a></p>
+        <p class="menu-label"><a class="nav-item" href="#work">Work</a></p>
+        <p class="menu-label"><a class="nav-item" href="#skills">Skills</a></p>
+        <p class="menu-label"><a class="nav-item" href="#contact">Contact</a></p>
       </aside>
     </nav>
 
     <!-- Content -->
     <div class="content pushbar_main_content">
-      <section class="hero is-success is-fullheight home">
+      <section id="home" class="hero is-success is-fullheight home">
         <div class="hero-body">
-          <div class="container is-fluid">
-            <h1 class="title">
-              Home
-            </h1>
+          <div class="container is-fluid level">
+            <div class="level-left has-text-weight-semibold is-capitalized">
+              <h1>
+              Hi, <br>
+              I'm Nick,<br>
+              Web developer. <br>
+              <span class="is-size-7">Front-end developer&nbsp;/&nbsp;Back-end developer</span>
+              <br><br>
+              <a class="button is-primary is-inverted is-outlined">Contact me</a></h1>
+            </div>
+            <div class="level-right">SVG</div>
           </div>
         </div>
       </section>
-      <section class="hero is-success is-fullheight home">
+      <section id="about" class="hero is-success is-fullheight home">
         <div class="hero-body">
           <div class="container is-fluid">
             <h1 class="title">
@@ -50,17 +59,16 @@
           </div>
         </div>
       </section>
-      <section class="hero is-success is-fullheight home">
+      <section id="work" class="hero is-success is-fullheight home">
         <div class="hero-body">
           <div class="container is-fluid">
             <h1 class="title">
               work
             </h1>
-           
           </div>
         </div>
       </section>
-      <section class="hero is-success is-fullheight home">
+      <section id="skills" class="hero is-success is-fullheight home">
         <div class="hero-body">
           <div class="container is-fluid">
             <h1 class="title">
@@ -70,9 +78,9 @@
           </div>
         </div>
       </section>
-      <section class="hero is-primary is-medium home">
+      <section id="contact" class="hero is-primary is-fullheight home">
         <div class="hero-body">
-          <div class="container is-fluid">
+          <div class="container is-medium is-fluid">
             <h1 class="title">
               contact
             </h1>
@@ -84,7 +92,7 @@
 
 
   <script src="/assets/js/index.js"></script>
-  <script src="/assets/js/pushbar.js"></script>
+
   <script src="https://unpkg.com/scrollnav@3.0.1/dist/scrollnav.min.umd.js"></script>
 </body>
 </html>
