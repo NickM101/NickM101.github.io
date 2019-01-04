@@ -5,13 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Nick</title>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
   <link rel="stylesheet" href="/assets/css/index.css">
   <link rel="stylesheet" href="/assets/css/pushbar.css">
 </head>
 <body>
   
-  <div class="container is-fluid">
+  <div class="wrap">
     <!-- Header -->
     <div class="header">
       <button data-pushbar-target="left">Left pushbar</button>
@@ -30,15 +31,58 @@
 
     <!-- Content -->
     <div class="content pushbar_main_content">
-      <section class="home">home</section>
-      <section class="about">about</section>
-      <section class="work">work</section>
-      <section class="skills">skills</section>
-      <section class="contact">contact</section>
+      <section class="hero is-success is-fullheight home">
+        <div class="hero-body">
+          <div class="container is-fluid">
+            <h1 class="title">
+              Home
+            </h1>
+          </div>
+        </div>
+      </section>
+      <section class="hero is-success is-fullheight home">
+        <div class="hero-body">
+          <div class="container is-fluid">
+            <h1 class="title">
+              About
+            </h1>
+            
+          </div>
+        </div>
+      </section>
+      <section class="hero is-success is-fullheight home">
+        <div class="hero-body">
+          <div class="container is-fluid">
+            <h1 class="title">
+              work
+            </h1>
+           
+          </div>
+        </div>
+      </section>
+      <section class="hero is-success is-fullheight home">
+        <div class="hero-body">
+          <div class="container is-fluid">
+            <h1 class="title">
+              skills
+            </h1>
+            
+          </div>
+        </div>
+      </section>
+      <section class="hero is-primary is-medium home">
+        <div class="hero-body">
+          <div class="container is-fluid">
+            <h1 class="title">
+              contact
+            </h1>
+          </div>
+        </div>
+      </section>
     </div>
   </div>
 
-  
+
   <script src="/assets/js/index.js"></script>
   <script src="/assets/js/pushbar.js"></script>
   <script src="https://unpkg.com/scrollnav@3.0.1/dist/scrollnav.min.umd.js"></script>
