@@ -6,14 +6,30 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Nick</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.css">
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="/assets/css/index.css">
+  <link rel="stylesheet" href="/assets/css/pushbar.css">
 </head>
 <body>
   
   <div class="container is-fluid">
-    <div class="header"> </div>
-    <nav></nav>
-    <div class="content">
+    <!-- Header -->
+    <div class="header">
+      <button data-pushbar-target="left">Left pushbar</button>
+    </div>
+
+    <!-- /Navbar -->
+    <nav>
+      <aside class="menu pushbar from_left" data-pushbar-id="left">
+        <span data-pushbar-close class="close push_right"></span>
+        <p class="menu-label"><a class="nav-item" href="/">Home</a></p>
+        <p class="menu-label"><a class="nav-item" href="/">Home</a></p>
+        <p class="menu-label"><a class="nav-item" href="/">Home</a></p>
+        <p class="menu-label"><a class="nav-item" href="/">Home</a></p>
+      </aside>
+    </nav>
+
+    <!-- Content -->
+    <div class="content pushbar_main_content">
       <section class="home">home</section>
       <section class="about">about</section>
       <section class="work">work</section>
@@ -22,6 +38,9 @@
     </div>
   </div>
 
-  <script src="index.js"></script>
+  
+  <script src="/assets/js/index.js"></script>
+  <script src="/assets/js/pushbar.js"></script>
+  <script src="https://unpkg.com/scrollnav@3.0.1/dist/scrollnav.min.umd.js"></script>
 </body>
 </html>
