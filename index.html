@@ -9,13 +9,13 @@
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
   <link rel="stylesheet" href="/assets/css/index.css">
   <link rel="stylesheet" href="/assets/css/pushbar.css">
-  <script src="/assets/js/pushbar.js"></script>
+
 </head>
 <body>
   
   <div class="wrap">
     <!-- Header -->
-    <div class="header">
+    <div class="header is-overlay">
       <button data-pushbar-target="left">Left pushbar</button>
     </div>
 
@@ -52,10 +52,16 @@
       <section id="about" class="hero is-success is-fullheight home">
         <div class="hero-body">
           <div class="container is-fluid">
-            <h1 class="title">
-              About
-            </h1>
-            
+            <div id="image">
+                <div id="aboutwrap">
+                  <p class="title">Hello There</p>
+                  <article>
+                    <p class="is-size-5">Computer science education cannot make anybody an expert programmer any more than studying brushes and pigment can make
+                    somebody an expert painter</p>
+                    <p class="is-size-6">Everything started with passion to web technologies.<br> A self taught developer, I started coding an year ago, it quickly grew into a passion and i've been thriving forward since.<br> I work with open source HTML, CSS, JS and MYSQL. I love challanges("celeste"), new projects & solving problems<br><span>Space > Tabs</span></p>
+                  </article>
+                </div>
+            </div>
           </div>
         </div>
       </section>
@@ -92,7 +98,7 @@
 
 
   <script src="/assets/js/index.js"></script>
-
+  <script src="/assets/js/pushbar.js"></script>
   <script src="https://unpkg.com/scrollnav@3.0.1/dist/scrollnav.min.umd.js"></script>
 </body>
 </html>
