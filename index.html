@@ -15,9 +15,10 @@
     ></script>
     <link rel="stylesheet" href="/assets/css/index.css" />
     <link rel="stylesheet" href="/assets/css/pushbar.css" />
+    <link rel="stylesheet" href="https://unpkg.com/bulma-modal-fx/dist/css/modal-fx.min.css" />
   </head>
   <body>
-    <div class="wrap">
+    <div id="wrap">
       <!-- /Navbar -->
       <nav>
         <aside class="menu pushbar from_left" data-pushbar-id="left">
@@ -35,53 +36,57 @@
       </nav>
 
       <!-- Content -->
-      <div class="content pushbar_main_content">
-        <section id="home" class="hero is-success is-fullheight home">
+      <div class="content pushbar_main_content" style="background-color: #2a2a2c;">
+        <section id="home" class="hero is-fullheight home">
           <!-- Header -->
-          <nav class="navbar is-transparent is-fixed-top">
-            <button data-pushbar-target="left">Left pushbar</button>
+          <nav class="navbar is-transparent is-fixed-top level">
+            <div class="level-left"></div>
+            <div class="level-right">
+              <svg version="1.1" viewBox="0 0 48 48" xml:space="preserve" width="48" height="48" data-pushbar-target="left" style="margin: 20px 30px 0 0">
+                <title>Menu</title>
+                <g>
+                  <path fill="#E6E6E6" d="M24,47C11.31787,47,1,36.68213,1,24S11.31787,1,24,1s23,10.31787,23,23S36.68213,47,24,47z"></path>
+                  <path fill="#E86C60" d="M18.80859,19.44092l-4.24268,12.72803c-0.11963,0.35938-0.02637,0.75586,0.2417,1.02344 c0.19043,0.19092,0.44629,0.29297,0.70703,0.29297c0.10596,0,0.2124-0.0166,0.31641-0.05127l12.72803-4.24268 c0.14917-0.0498,0.28235-0.1333,0.39069-0.24164l-9.89954-9.89954C18.94189,19.15857,18.8584,19.29175,18.80859,19.44092z"></path>
+                  <path fill="#42A6DD" d="M33.43408,15.83105c0.11963-0.35938,0.02637-0.75586-0.2417-1.02344 c-0.26807-0.26904-0.66504-0.36328-1.02344-0.2417l-12.72803,4.24268c-0.14917,0.0498-0.28235,0.1333-0.39069,0.24164 l9.89954,9.89954c0.10834-0.10834,0.19183-0.24152,0.24164-0.39069L33.43408,15.83105z"></path>
+                </g>
+              </svg>
+            </div>
           </nav>
           <div class="hero-body">
             <div class="container is-fluid level">
               <div class="level-left has-text-weight-semibold is-capitalized">
-                <h1>
+                <h1 class="is-size-1">
                   Hi, <br />
                   I'm Nick,<br />
                   Web developer. <br />
-                  <span class="is-size-7"
+                  <span class="is-size-5"
                     >Front-end developer&nbsp;/&nbsp;Back-end developer</span
                   >
                   <br /><br />
-                  <a class="button is-primary is-inverted is-outlined"
+                  <a class="button is-warning has-text-tier"
                     >Contact me</a
                   >
                 </h1>
               </div>
-              <div class="level-right">SVG</div>
+              <div class="level-right is-hidden-touch">SVG</div>
             </div>
           </div>
         </section>
-        <section id="about" class="hero is-success is-fullheight home">
+        <section id="about" class="hero is-fullheight has-background-grey-darker">
           <div class="hero-body">
             <div class="container is-fluid">
               <div id="image">
                 <div id="aboutwrap">
-                  <p class="title">Hello There</p>
-                  <article>
-                    <p class="is-size-5">
-                      Computer science education cannot make anybody an expert
-                      programmer any more than studying brushes and pigment can
-                      make somebody an expert painter
-                    </p>
-                    <p class="is-size-6">
+                  <p class="title has-text-white">Hello There</p>
+                  <article style="line-height: 2.5">
+                    <p class="is-size-6 is-flex-mobile is-size-7-mobile">
                       Everything started with passion to web technologies.<br />
                       A self taught developer, I started coding an year ago, it
                       quickly grew into a passion and i've been thriving forward
                       since.<br />
                       I work with open source HTML, CSS, JS and MYSQL. I love
-                      challanges("celeste"), new projects & solving problems<br /><span
-                        >Space > Tabs</span
-                      >
+                      challanges("celeste"), new projects & solving problems<br />
+                      Space > Tabs
                     </p>
                   </article>
                 </div>
@@ -89,21 +94,21 @@
             </div>
           </div>
         </section>
-        <section id="work" class="hero is-success is-fullheight home">
+        <section id="work" class="hero is-fullheight has-background-grey-darker has-text-white	">
           <div class="hero-body">
             <div class="container">
-              <div id="projects" style="margin:auto"> 
-                <h1 class="has-text-centered">Projects</h1>
+              <div id="projects" class="is-centered" > 
+                <h1 class="has-text-centered has-text-white">Projects</h1>
                 <div class="sample has-text-centered">
                     My Projects some are on production some are for the
                     show-case / appreciate that zone mode
                 </div>
                 <br>
                 <!-- 1 -->
-                <div class="project columns">
+                <div class="project columns" >
                   <div class="info column">
-                    <p class="title">Awwards <br>
-                      <span class="is-size-5 has-text-weight-light is-marginless">Front and backend development</span> 
+                    <p class="title has-text-white">Awwards <br>
+                      <span class="is-size-5 has-text-weight-light is-marginless has-text-white">Front and backend development</span> 
                     </p>
                     <div class="description">
                       <p>
@@ -112,15 +117,13 @@
                         excepturi veniam perspiciatis, ad nesciunt qui quas?
                         Velit soluta vero et aut eaque sequi laboriosam hic!
                       </p>
-                      <a class="button is-primary is-inverted is-outlined"
-                        >Contact me</a
-                      >
+                      <a class="button is-warning is-outlined modal-button" data-target="showModal">Check Website</a>
                     </div>
                   </div>
 
                   <div class="cover column is-hidden-mobile" >
                     <figure>
-                    <a href="/linkto">
+                    <a href="#">
                       <img class="level-item has-text-centered"
                         src="https://d33wubrfki0l68.cloudfront.net/abe09770dbe7afb0dbf2ecfc84fc466ad56ce3ca/ad085/img/projects/nysb.jpg"
                         alt="cover image"
@@ -134,8 +137,8 @@
                 <!-- 2 -->
                 <div class="project columns">
                   <div class="info column">
-                    <p class="title">Awwards <br>
-                      <span class="is-size-5 has-text-weight-light is-marginless">Front and backend development</span>
+                    <p class="title has-text-white	">Awwards <br>
+                      <span class="is-size-5 has-text-weight-light is-marginless has-text-white	">Front and backend development</span>
                     </p>
                     <div class="description">
                       <p>
@@ -144,13 +147,13 @@
                         excepturi veniam perspiciatis, ad nesciunt qui quas?
                         Velit soluta vero et aut eaque sequi laboriosam hic!
                       </p>
-                      <a class="button is-primary is-inverted is-outlined">Contact me</a>
+                      <a class="button is-warning is-outlined modal-button"  data-target="showModal1">Check Website</a>
                     </div>
                   </div>
                 
                   <div class="cover column is-hidden-mobile">
                     <figure>
-                      <a href="/linkto">
+                      <a href="#">
                         <img class="level-item has-text-centered" src="https://d33wubrfki0l68.cloudfront.net/abe09770dbe7afb0dbf2ecfc84fc466ad56ce3ca/ad085/img/projects/nysb.jpg"
                           alt="cover image" width="300" height="190" />
                       </a>
@@ -160,8 +163,8 @@
                 <!-- 3 -->
                 <div class="project columns">
                   <div class="info column">
-                    <p class="title">Awwards <br>
-                      <span class="is-size-5 has-text-weight-light is-marginless">Front and backend development</span>
+                    <p class="title has-text-white">Awwards <br>
+                      <span class="is-size-5 has-text-weight-light is-marginless has-text-white	">Front and backend development</span>
                     </p>
                     <div class="description">
                       <p>
@@ -170,13 +173,13 @@
                         excepturi veniam perspiciatis, ad nesciunt qui quas?
                         Velit soluta vero et aut eaque sequi laboriosam hic!
                       </p>
-                      <a class="button is-primary is-inverted is-outlined">Contact me</a>
+                      <a class="button is-warning is-outlined modal-button" data-target="showModal2">Check Website</a>
                     </div>
                   </div>
                 
                   <div class="cover column is-hidden-mobile">
                     <figure>
-                      <a href="/linkto">
+                      <a href="#">
                         <img class="level-item has-text-centered" src="https://d33wubrfki0l68.cloudfront.net/abe09770dbe7afb0dbf2ecfc84fc466ad56ce3ca/ad085/img/projects/nysb.jpg"
                           alt="cover image" width="300" height="190" />
                       </a>
@@ -187,13 +190,52 @@
               </div>
             </div>
           </div>
-        </section>
-        <section id="skills" class="hero is-success is-fullheight home">
-          <div class="hero-body">
-            <div class="container is-fluid"><h1 class="title">skills</h1></div>
+          <!-- modals -->
+          <div>
+            <!-- 1 -->
+            <div id="showModal" class="modal modal-full-screen modal-fx-fadeInScale">
+              <div class="modal-content">
+                
+              </div>
+              <button class="modal-close is-large is-warning " aria-label="close"></button>
+            </div>
+            <!-- 2 -->
+            <div id="showModal1" class="modal modal-full-screen modal-fx-fadeInScale">
+              <div class="modal-content">
+            
+              </div>
+              <button class="modal-close is-large" aria-label="close"></button>
+            </div>
+            <!-- 3 -->
+            <div id="showModal2" class="modal modal-full-screen modal-fx-fadeInScale">
+              <div class="modal-content">
+            
+              </div>
+              <button class="modal-close is-large" aria-label="close"></button>
+            </div>
           </div>
         </section>
-        <section id="contact" class="hero is-primary is-fullheight home">
+        <section id="skills" class="hero is-fullheight has-background-grey-darker">
+          <div class="hero-body">
+            <div class="container is-fluid level">
+              <div class="column level-left">
+
+                <p class="title has-text-white">Skills & Experience</p>
+                <div class="skillset has-text-white">
+                  <p>Main area of my expertise is front end development and evevrything related with client side of the web <br>
+                    Html, CSS, Javascript, building small and medium web app using React and vue, building custom animations
+                    and coding interactive layouts. <br> I have also large full-stack developer experience with open source CMS
+                    like (Django and Flask) </p>
+
+                </div>
+              </div>
+              <div class="column level-right">
+                    <p>Hello</p>                
+                </div>
+              </div>
+            </div>
+        </section>
+        <section id="contact" class="hero is-fullheight has-background-grey-darker">
           <div class="hero-body">
             <div class="container is-medium is-fluid">
               <h1 class="title">contact</h1>
@@ -205,6 +247,9 @@
 
     <script src="/assets/js/index.js"></script>
     <script src="/assets/js/pushbar.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
     <script src="https://unpkg.com/scrollnav@3.0.1/dist/scrollnav.min.umd.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/bulma-modal-fx/dist/js/modal-fx.min.js"></script>
   </body>
 </html>

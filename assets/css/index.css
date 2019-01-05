@@ -1,34 +1,84 @@
+/* Humburger */
+.hamburger .line {
+  width: 50px;
+  height: 5px;
+  background-color: #ecf0f1;
+  display: block;
+  margin: 8px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger:hover {
+  cursor: pointer;
+}
+
+#hamburger.is-active .line:nth-child(1),
+#hamburger.is-active .line:nth-child(3) {
+  width: 40px;
+}
+
+#hamburger.is-active .line:nth-child(1) {
+  -webkit-transform: translateX(10px) rotate(45deg);
+  -ms-transform: translateX(10px) rotate(45deg);
+  -o-transform: translateX(10px) rotate(45deg);
+  transform: translateX(10px) rotate(45deg);
+}
+
+#hamburger.is-active .line:nth-child(3) {
+  -webkit-transform: translateX(10px) rotate(-45deg);
+  -ms-transform: translateX(10px) rotate(-45deg);
+  -o-transform: translateX(10px) rotate(-45deg);
+  transform: translateX(10px) rotate(-45deg);
+}
+
 #image {
-    background-image: url("/assets/img/nickm.webp");
-    width: 80%;
-    height: 550px;
-    background-position: top;
-    background-repeat: no-repeat;
-    margin: auto;
-    background-size: cover;
-    margin-top: 8%;
-    margin-bottom: 25%;
+  background-image: url("/assets/img/nickm.webp");
+  width: 80%;
+  height: 550px;
+  background-position: top;
+  background-repeat: no-repeat;
+  margin: auto;
+  background-size: cover;
+  margin-top: 8%;
+  margin-bottom: 25%;
 }
 
 #aboutwrap {
-    background-color: #2A2A2C;
-    color: white;
-    padding: 30px;
-    padding-left: 40px;
-    font-kerning: 1.2;
-    z-index: 5;
-    position: relative;
-    box-shadow: 0 5px 15px 0 rgba(0,0,0,0.25);
-    max-width: 80%;
-    line-height: 22pt;
-    margin: auto;
-    top: 90%;
-    box-shadow: 0 5px 15px 0 rgba(0,0,0,0.25);
+  background-color: #2a2a2c;
+  color: white;
+  padding: 30px;
+  padding-left: 40px;
+  font-kerning: 1.2;
+  z-index: 5;
+  position: relative;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
+  max-width: 80%;
+  line-height: 22pt;
+  margin: auto;
+  top: 90%;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
 }
 
 #projects > .project > p {
-    line-height: 5%;
+  line-height: 5%;
 }
 #projects > .project {
-    margin-top: 5rem;
+  margin-top: 5rem;
+}
+
+/* Skills */
+
+/* Color section */
+#home{
+  background: linear-gradient(white, 80%, #363636);
+}
+
+.title {
+	color: white,
+}
+
+.modal-close{
+	background: hsl(48, 100%, 67%);
 }
