@@ -18,11 +18,6 @@
   </head>
   <body>
     <div class="wrap">
-      <!-- Header -->
-      <div class="header is-overlay">
-        <button data-pushbar-target="left">Left pushbar</button>
-      </div>
-
       <!-- /Navbar -->
       <nav>
         <aside class="menu pushbar from_left" data-pushbar-id="left">
@@ -42,6 +37,10 @@
       <!-- Content -->
       <div class="content pushbar_main_content">
         <section id="home" class="hero is-success is-fullheight home">
+          <!-- Header -->
+          <nav class="navbar is-transparent is-fixed-top">
+            <button data-pushbar-target="left">Left pushbar</button>
+          </nav>
           <div class="hero-body">
             <div class="container is-fluid level">
               <div class="level-left has-text-weight-semibold is-capitalized">
@@ -92,21 +91,19 @@
         </section>
         <section id="work" class="hero is-success is-fullheight home">
           <div class="hero-body">
-            <div class="container is-fluid">
-              <div id="projects">
+            <div class="container">
+              <div id="projects" style="margin:auto"> 
                 <h1 class="has-text-centered">Projects</h1>
-                <div class="sample">
-                  <p>
+                <div class="sample has-text-centered">
                     My Projects some are on production some are for the
                     show-case / appreciate that zone mode
-                  </p>
                 </div>
+                <br>
                 <!-- 1 -->
-                <div class="project has-text-justified level">
-                  <div class="info level-left">
-                    <p class="title">Awwards</p>
-                    <p class="work has-text-weight-light">
-                      Front and backend development
+                <div class="project columns">
+                  <div class="info column">
+                    <p class="title">Awwards <br>
+                      <span class="is-size-5 has-text-weight-light is-marginless">Front and backend development</span> 
                     </p>
                     <div class="description">
                       <p>
@@ -115,24 +112,78 @@
                         excepturi veniam perspiciatis, ad nesciunt qui quas?
                         Velit soluta vero et aut eaque sequi laboriosam hic!
                       </p>
-                      <a class="button is-primary is-inverted is-outlined level-item"
+                      <a class="button is-primary is-inverted is-outlined"
                         >Contact me</a
                       >
                     </div>
                   </div>
 
-                  <div class="cover level-right is-hidden-mobile">
+                  <div class="cover column is-hidden-mobile" >
+                    <figure>
                     <a href="/linkto">
-                      <img
+                      <img class="level-item has-text-centered"
                         src="https://d33wubrfki0l68.cloudfront.net/abe09770dbe7afb0dbf2ecfc84fc466ad56ce3ca/ad085/img/projects/nysb.jpg"
                         alt="cover image"
                         width="300"
                         height="190"
                       />
                     </a>
+                    </figure>
                   </div>
                 </div>
                 <!-- 2 -->
+                <div class="project columns">
+                  <div class="info column">
+                    <p class="title">Awwards <br>
+                      <span class="is-size-5 has-text-weight-light is-marginless">Front and backend development</span>
+                    </p>
+                    <div class="description">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Fugit officia, sunt corrupti laboriosam unde
+                        excepturi veniam perspiciatis, ad nesciunt qui quas?
+                        Velit soluta vero et aut eaque sequi laboriosam hic!
+                      </p>
+                      <a class="button is-primary is-inverted is-outlined">Contact me</a>
+                    </div>
+                  </div>
+                
+                  <div class="cover column is-hidden-mobile">
+                    <figure>
+                      <a href="/linkto">
+                        <img class="level-item has-text-centered" src="https://d33wubrfki0l68.cloudfront.net/abe09770dbe7afb0dbf2ecfc84fc466ad56ce3ca/ad085/img/projects/nysb.jpg"
+                          alt="cover image" width="300" height="190" />
+                      </a>
+                    </figure>
+                  </div>
+                </div>
+                <!-- 3 -->
+                <div class="project columns">
+                  <div class="info column">
+                    <p class="title">Awwards <br>
+                      <span class="is-size-5 has-text-weight-light is-marginless">Front and backend development</span>
+                    </p>
+                    <div class="description">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Fugit officia, sunt corrupti laboriosam unde
+                        excepturi veniam perspiciatis, ad nesciunt qui quas?
+                        Velit soluta vero et aut eaque sequi laboriosam hic!
+                      </p>
+                      <a class="button is-primary is-inverted is-outlined">Contact me</a>
+                    </div>
+                  </div>
+                
+                  <div class="cover column is-hidden-mobile">
+                    <figure>
+                      <a href="/linkto">
+                        <img class="level-item has-text-centered" src="https://d33wubrfki0l68.cloudfront.net/abe09770dbe7afb0dbf2ecfc84fc466ad56ce3ca/ad085/img/projects/nysb.jpg"
+                          alt="cover image" width="300" height="190" />
+                      </a>
+                    </figure>
+                  </div>
+                </div>
+                <!-- end -->
               </div>
             </div>
           </div>
