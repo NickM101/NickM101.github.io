@@ -1,3 +1,9 @@
+/* Navbar */
+aside {
+  padding-top: 65%;
+  padding-bottom: 65%;
+}
+
 /* Humburger */
 .hamburger .line {
   width: 50px;
@@ -81,4 +87,15 @@
 
 .modal-close{
 	background: hsl(48, 100%, 67%);
+}
+
+/* SVG */
+.initials{
+  background-image: url('/assets/svg/initials.svg');
+  display: block;
+  content: "";
+}
+
+.nav-item > .active {
+  background-color: #363636;
 }
