@@ -1,8 +1,29 @@
+/* scrollbar */
+::-webkit-scrollbar-track
+{
+	border: 1px solid rgb(0, 0, 0);
+  background-color: #F5F5F5;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+  border-radius: 10px;
+	background-color: #FFC94E;	
+}
+
 /* Navbar */
 aside {
-  padding-top: 65%;
-  padding-bottom: 65%;
+  padding-top: 40%;
 }
+
 
 /* Humburger */
 .hamburger .line {
