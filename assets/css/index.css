@@ -95,7 +95,7 @@ aside {
   max-width: 80%;
   line-height: 22pt;
   margin: auto;
-  top: 90%;
+  top: 78%;
   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
 }
 
@@ -130,4 +130,14 @@ aside {
 
 .nav-item > .active {
   background-color: #363636;
+}
+
+/* tile */
+.tile.is-gapless .tile.is-parent {
+  padding: 0;
+  margin: 0;
+}
+.tile.is-gapless .tile.is-vertical > .tile.is-child {
+  margin: 0 !important;
+  border-radius: 0;
 }
