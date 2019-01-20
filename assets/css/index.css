@@ -123,9 +123,7 @@ aside {
 
 /* SVG */
 .initials{
-  background-image: url('/assets/svg/initials.svg');
-  display: block;
-  content: "";
+  
 }
 
 .nav-item > .active {
