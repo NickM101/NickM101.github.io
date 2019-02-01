@@ -1,0 +1,3 @@
+Name of the repo + .github.io
+
+eg: nickm.github.io
