@@ -101,14 +101,15 @@ aside {
 
 @media only screen and (max-width: 600px){
   #image {
-    height: 150px;
+    height: 200px;
+    width: 100%;
   }
   #aboutwrap {
-    top: 90%;
+    top: 60%;
     margin: 0%;
-    padding: 30px;
-    padding-left: 40px;
-    left: 10%;
+    padding: 20px;
+    max-width: 90%;
+    left: 5%;
   }
 }
 
