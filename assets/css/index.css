@@ -99,6 +99,19 @@ aside {
   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
 }
 
+@media only screen and (max-width: 600px){
+  #image {
+    height: 150px;
+  }
+  #aboutwrap {
+    top: 90%;
+    margin: 0%;
+    padding: 30px;
+    padding-left: 40px;
+    left: 10%;
+  }
+}
+
 #projects > .project > p {
   line-height: 5%;
 }
@@ -164,3 +177,6 @@ aside {
 .myslides{
   top: 30px;
 }
+
+/* Loader */
+
