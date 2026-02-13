@@ -1,323 +1,757 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
-    <title>Nick</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css"
-    />
-    <script
-      defer
-      src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
-    ></script>
-    <link rel="stylesheet" href="assets/css/index.css" />
-    <link rel="stylesheet" href="assets/css/pushbar.css" />
-    <link rel="stylesheet" href="https://unpkg.com/bulma-modal-fx/dist/css/modal-fx.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-extensions@1.0.3/bulma-carousel/dist/bulma-carousel.min.css">
-  </head>
-  <body class="app">
 
-    <!-- loader -->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vCard - Personal Portfolio</title>
 
-    <!-- Content -->
-    <div id="wrap" class="animate-bottom">
-      <!-- Navbar -->
-      <nav>
-        <aside class="menu parent pushbar from_left has-background-warning" data-pushbar-id="left" >
-          <span data-pushbar-close class="close push_right"></span>
-        
-          <div class="child">
-          <p class="menu-label has-text-centered "><a class="nav-item home" href="#home">Home</a></p>
-          <p class="menu-label has-text-centered"><a class="nav-item about" href="#about">About</a></p>
-          <p class="menu-label has-text-centered"><a class="nav-item work" href="#work">Work</a></p>
-          <p class="menu-label has-text-centered">
-            <a class="nav-item skills" href="#skills">Skills</a>
-          </p>
-          <p class="menu-label has-text-centered">
-            <a class="nav-item contact" href="#contact">Contact</a>
-          </p>
-          </div>
-        
-        </aside>
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Richard hanrick" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Nick Munene">Nick Munene</h1>
+
+          <p class="title">Full Stack Developer, UX/UI Designer, AI Developer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:nickmunene101@gmail.com" class="contact-link">nickmunene101@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+254707757088" class="contact-link">+254 707 757 088</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1996-03-17">March 17, 1996</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Nairobi, Kenya</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/nickmunene101/" class="social-link" target="_blank">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/NickM101" class="social-link" target="_blank">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://x.com/nick__nesh" class="social-link" target="_blank">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
       </nav>
 
-      <!-- Content -->
-      <div class="content pushbar_main_content" style="background-color: #2a2a2c;">
-        <section id="home" class="hero is-fullheight home">
-          <!-- Header -->
-          <nav class="navbar is-transparent is-fixed-top level">
-            <div class="level-left"></div>
-            <div class="level-right">
-              <svg class="is-pulled-right" version="1.1" viewBox="0 0 48 48" xml:space="preserve" width="48" height="48" data-pushbar-target="left" style="margin: 20px 30px 0 0">
-                <title>Menu</title>
-                <g>
-                  <path fill="#E6E6E6" d="M24,47C11.31787,47,1,36.68213,1,24S11.31787,1,24,1s23,10.31787,23,23S36.68213,47,24,47z"></path>
-                  <path fill="#E86C60" d="M18.80859,19.44092l-4.24268,12.72803c-0.11963,0.35938-0.02637,0.75586,0.2417,1.02344 c0.19043,0.19092,0.44629,0.29297,0.70703,0.29297c0.10596,0,0.2124-0.0166,0.31641-0.05127l12.72803-4.24268 c0.14917-0.0498,0.28235-0.1333,0.39069-0.24164l-9.89954-9.89954C18.94189,19.15857,18.8584,19.29175,18.80859,19.44092z"></path>
-                  <path fill="#42A6DD" d="M33.43408,15.83105c0.11963-0.35938,0.02637-0.75586-0.2417-1.02344 c-0.26807-0.26904-0.66504-0.36328-1.02344-0.2417l-12.72803,4.24268c-0.14917,0.0498-0.28235,0.1333-0.39069,0.24164 l9.89954,9.89954c0.10834-0.10834,0.19183-0.24152,0.24164-0.39069L33.43408,15.83105z"></path>
-                </g>
-              </svg>
-            </div>
-          </nav>
-          <div class="hero-body">
-            <div class="container is-fluid level">
-              <div class="level-left has-text-weight-semibold is-capitalized">
-                <h1 class="is-size-1">
-                  Hi, <br />
-                  I'm Nick,<br />
-                  Web developer. <br />
-                  <span class="is-size-5"
-                    >Front-end developer&nbsp;/&nbsp;Back-end developer</span
-                  >
-                  <br /><br />
-                  <a class="button is-warning has-text-tier" href="mailto:nickmunene101@gmail.com"
-                  target="_top"
-                    >Say Hi</a
-                  >
-                </h1>
-              </div>
-              <div class="level-right ">
-                <!-- <img class="initials" src="/assets/img/initials.png" width="500"> -->
-              </div>
-            </div>
-          </div>
-        </section>
-        <section id="about" class="hero is-fullheight has-background-grey-darker">
-          <div class="hero-body">
-            <div class="container is-fluid">
-              <div id="image">
-                <div id="aboutwrap">
-                  <p class="title has-text-white">Hello There</p>
-                  <article style="line-height: 1.3">
-                    <p class="is-size-5 is-flex-mobile is-size-6-mobile">
-                      Everything started with passion to web technologies.<br />
-                      A self taught developer, I started coding an year ago, it
-                      quickly grew into a passion and i've been thriving forward
-                      since.<br />
-                      I work with open source HTML, CSS, JS and MYSQL. I love
-                      challanges("celeste"), new projects & solving problems<br />
-                      Space > Tabs
-                    </p>
-                  </article>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section id="work" class="hero is-fullheight has-background-grey-darker has-text-white	">
-          <div class="hero-body">
-            <div class="container is-fluid">
-              <div id="projects" class="is-centered" > 
-                <h1 class="has-text-centered has-text-white">Projects</h1>
-                <div class="sample has-text-centered">
-                    My Projects some are on production some are for the
-                    show-case / appreciate that zone mode
-                </div>
-                <br>
-                <!-- 1 -->
-                <div class="project columns" >
-                  <div class="info column">
-                    <p class="title has-text-white">Awwards <br>
-                      <span class="is-size-5 has-text-weight-light is-marginless has-text-white">Front and backend development</span> 
-                    </p>
-                    <div class="description">
-                      <p>
-                        This is a web application that lets users rate websites uploaded by design, performance and creativity.
-                      </p>
-                      <a class="button is-warning is-outlined modal-button" href="https://github.com/NickM101/awards">Check Website</a>
-                      <!-- data-target="modal-1" -->
-                    </div>
-                  </div>
 
-                  <div class="cover column is-hidden-mobile" >
-                    <figure>
-                    <a href="#">
-                      <img class="level-item has-text-centered "
-                        src="https://d33wubrfki0l68.cloudfront.net/abe09770dbe7afb0dbf2ecfc84fc466ad56ce3ca/ad085/img/projects/nysb.jpg"
-                        alt="cover image"
-                        width="300"
-                        height="190"
-                      />
-                    </a>
-                    </figure>
-                  </div>
-                </div>
-                <!-- 2 -->
-                <div class="project columns">
-                  <div class="info column">
-                    <p class="title has-text-white">Instagram<br>
-                      <span class="is-size-5 has-text-weight-light is-marginless has-text-white	">Front and backend development</span>
-                    </p>
-                    <div class="description">
-                      <p>
-                        A replica of the official Instagram, created by Django. Instagram is a social media platform for posting images and liking them by double tapping on the images. Users can also comment on an image. Creating, following, unfollowing and deleting of users can be performance.
-                      </p>
-                      <a class="button is-warning is-outlined modal-button" href="https://github.com/NickM101/insta" >Check Website</a> 
-                      <!-- data-target="modal-2" -->
-                    </div>
-                  </div>
-                
-                  <div class="cover column is-hidden-mobile">
-                    <figure>
-                      <a href="#">
-                        <img class="level-item has-text-centered" src="https://d33wubrfki0l68.cloudfront.net/abe09770dbe7afb0dbf2ecfc84fc466ad56ce3ca/ad085/img/projects/nysb.jpg"
-                          alt="cover image" width="300" height="190" />
-                      </a>
-                    </figure>
-                  </div>
-                </div>
-                <!-- 3 -->
-                <div class="project columns">
-                  <div class="info column">
-                    <p class="title has-text-white">Pitches<br>
-                      <span class="is-size-5 has-text-weight-light is-marginless has-text-white	">Front and backend development</span>
-                    </p>
-                    <div class="description">
-                      <p>
-                        Pitches is a web platform for pitching ideas of different categories and also can be copied to be used somewhere else.Users can pitch, delete and also edit there profile to there liking.
-                      </p>
-                      <a class="button is-warning is-outlined modal-button" href="https://github.com/NickM101/pitches">Check Website</a> 
-                      <!-- data-target="modal-3" -->
-                    </div>
-                  </div>
-                
-                  <div class="cover column is-hidden-mobile">
-                    <figure>
-                      <a href="#">
-                        <img class="level-item has-text-centered" src="https://d33wubrfki0l68.cloudfront.net/abe09770dbe7afb0dbf2ecfc84fc466ad56ce3ca/ad085/img/projects/nysb.jpg"
-                          alt="cover image" width="300" height="190" />
-                      </a>
-                    </figure>
-                  </div>
-                </div>
-                <!-- end -->
-              </div>
-            </div>
-          </div>
-          <!-- modals -->
-          <div>
-            <!-- 1 -->
-            <div id="modal-1" class="modal modal-full-screen modal-fx-fadeInScale">
-              <div class="modal-content">
-                <div class="box">
-                    <div class="container content">
-                      <!-- png macbook -->
-                      <div class="projects">
-                        <div class="is-showcase">
-                          <div class="is-laptop">
-                            <div class="is-laptop-content">
-                              <div class="slideshow-container">
-                                <div class="mySlides laptop-slider fade">
-                                  <img src="assets/img/test.jpg" height="800" width="600">
-                                </div>
-                                <div class="mySlides laptop-slider fade">
-                                  <img src="assets/img/test.jpg" height="800" width="600">
-                                </div>
-                                <div class="mySlides laptop-slider fade">
-                                  <img src="assets/img/test.jpg" height="800" width="600">
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="is-mobile">
-                            <div class="is-mobile-content">
-                              
-                            </div>
-                          </div>
-                          <div style="text-align:center">
-                            <span class="dot"></span>
-                            <span class="dot"></span>
-                            <span class="dot"></span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                </div>
-              </div>
-              <button class="modal-close is-large is-warning " aria-label="close"></button>
-            </div>
-            <!-- 2 -->
-            <div id="modal-2" class="modal modal-full-screen modal-fx-fadeInScale">
-              <div class="modal-content">
-                <p>2</p>
-              </div>
-              <button class="modal-close is-large" aria-label="close"></button>
-            </div>
-            <!-- 3 -->
-            <div id="modal-3" class="modal modal-full-screen modal-fx-fadeInScale">
-              <div class="modal-content">
-                <p class="has-background-color-grey">hello people</p>
-              </div>
-              <button class="modal-close is-large" aria-label="close"></button>
-            </div>
-          </div>
-        </section>
-        <section id="skills" class="hero is-large has-background-grey-darker">
-          <div class="hero-body">
-            <div class="container is-fluid is-medium level">
-              <div class="column level-left">
-                <p class="title has-text-white">Skills & Experience</p>
-                <div class="skillset has-text-white">
-                  <p> Main area of my expertise is front end development and evevrything related with client side of the web <br>
-                    Html, CSS, Javascript, building small and medium web app using React and vue, building custom animations
-                    and coding interactive layouts. <br> I have also large full-stack developer experience with open source services
-                    like (Django and Flask) </p>
-                </div>
-              </div>
-              <div class="column level-right is-hidden-mobile">
 
-              <!-- ****  -->
-                  <iframe src="https://open.spotify.com/embed/user/bloodhood97/playlist/6xmzINCc1HVSwDWmGmg2lJ" width="500" height="380"
-                    frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-              <!--  -->
-              </div>
-              </div>
-            </div>
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Full Stack Software Engineer with 6+ years delivering end‑to‑end web and mobile products.
+            Expert in React, React Native (Expo), and TypeScript, with strong experience in Node.js, REST/GraphQL APIs,
+            and cloud (AWS/GCP/Azure).
+          </p>
+
+          <p>
+            Known for modernizing legacy stacks, shipping cross‑platform apps, and driving measurable gains in
+            performance, reliability, and user adoption through clean architecture, reusable components, and thoughtful
+            UI/UX.
+          </p>
         </section>
-        <section id="contact" class="hero has-background-grey-darker">
-          <div class="hero-body ">
-            <div class="container is-fluid">
-              <div class="contact">
-                <div class="column has-text-white">
-          
-                    <h2 class="is-subtitle">
-                      <p class="has-text-white">Get To Know Me</p>
-                    </h2>
-                    <p>You can find me in Nairobi most probably in a coffee shop or in </p>
-                </div>
-                <div class="column">
-                      <br><br><br>
-                    <div class="level has-text-warning line">
-                    <div class="level-item ">
-                      <p>Nairobi, Kenya</p>
-                    </div>
-                    <div class="level-item">
-                      <p>(+254) 70 775 088</p>
-                    </div>
-                    <div class="level-item">
-                      <p>nickmunene101@gmail.com</p>
-                    </div>
-                  
-                </div>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg
+                " alt="design icon" width="40">
               </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Full Stack Development</h4>
+
+                <p class="service-item-text">
+                  Delivering end-to-end web products with modern stacks like React, Node.js, and TypeScript.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">UI/UX Design</h4>
+
+                <p class="service-item-text">
+                  Thoughtful and intuitive designs focused on performance, accessibility, and user adoption.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Mobile App Development</h4>
+
+                <p class="service-item-text">
+                  Shipping cross-platform mobile apps for iOS and Android using React Native and Expo.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">AI & Automation</h4>
+
+                <p class="service-item-text">
+                  Leveraging Generative AI tools and Prompt Engineering to drive efficiency and innovation.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
             </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - clients
+        -->
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Clients</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-1-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-2-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-3-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-4-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-5-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-6-color.png" alt="client logo">
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
           </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Chuka University</h4>
+
+              <span>2021 — 2025</span>
+
+              <p class="timeline-text">
+                Bachelor of Science (Applied Computer Science)
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Catholic University of Eastern Africa</h4>
+
+              <span>2015 — 2017</span>
+
+              <p class="timeline-text">
+                Diploma in Information Technology
+              </p>
+
+            </li>
+
+          </ol>
+
         </section>
-      </div>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Full Stack Developer</h4>
+
+              <p class="timeline-text">MYMEDDEVICES LIMITED (Aug 2023 - Present)</p>
+
+              <p class="timeline-text">
+                Rebuilt the customer-facing web platform with React and TypeScript, modernizing UI and performance.
+                Shipped cross-platform mobile apps for iOS and Android in React Native.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Frontend Developer</h4>
+
+              <p class="timeline-text">GITSTART (Aug 2022 – Mar 2023)</p>
+
+              <p class="timeline-text">
+                Developed cross-browser, responsive user interfaces with a focus on usability. Collaborated with
+                distributed engineering teams to ship iterative UI enhancements.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Full Stack Developer</h4>
+
+              <p class="timeline-text">MOMBO SACCO (Aug 2021 – Jul 2022)</p>
+
+              <p class="timeline-text">
+                Optimized content and data workflows, reducing update time by 20%. Increased application stability
+                through structured bug triage and resolution.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Mobile Application Developer</h4>
+
+              <p class="timeline-text">MEDBOOK KENYA LIMITED (May 2019 – May 2021)</p>
+
+              <p class="timeline-text">
+                Built and maintained mobile applications for iOS and Android using reusable design patterns and shared
+                templates.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Frontend (React, NextJS, VueJS)</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Mobile (React Native, Expo, Flutter)</h5>
+                <data value="85">85%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Backend (NodeJS, NestJS, Python, Go)</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Cloud & DevOps (AWS, GCP, Azure, CI/CD)</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127641.17044273627!2d36.76499547495505!3d-1.3030359776405498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1172d84d49a7%3A0xf7cf0254b297924c!2sNairobi!5e0!3m2!1ssw!2ske!4v1770993358628!5m2!1ssw!2ske"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="https://formspree.io/f/xoqykogb" class="form" data-form method="POST">
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
     </div>
 
+  </main>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="assets/js/index.js"></script>
-    <script src="assets/js/pushbar.js"></script>
-    <script src="https://unpkg.com/scrollnav@3.0.1/dist/scrollnav.min.umd.js"></script>
-    <script type="text/javascript" src="https://unpkg.com/bulma-modal-fx/dist/js/modal-fx.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bulma-extensions@1.0.3/bulma-carousel/dist/bulma-carousel.min.js"></script>
-  </body>
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
 
 </html>
